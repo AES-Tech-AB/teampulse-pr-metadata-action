@@ -1,0 +1,27 @@
+{
+  "name": "teampulse-pr-metadata-action",
+  "version": "1.0.0",
+  "description": "A GitHub Action that sends merged PR metadata to TeamPulse API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests yet\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "github",
+    "action",
+    "pr",
+    "metadata",
+    "teampulse"
+  ],
+  "author": "AES Tech AB",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0",
+    "axios": "^1.7.9"
+  }
+}

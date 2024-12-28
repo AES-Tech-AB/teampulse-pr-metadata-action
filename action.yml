@@ -1,0 +1,27 @@
+name: "TeamPulse PR Metadata Action"
+description: "Posts merged PR metadata to TeamPulse API"
+
+author: "AES Tech AB"
+runs:
+  using: "node20"
+  main: "index.js"
+
+inputs:
+  github_token:
+    description: "Token for GitHub API (GITHUB_TOKEN)"
+    required: true
+  teampulse_token:
+    description: "Authentication token for the TeamPulse API"
+    required: true
+  api_endpoint:
+    description: "TeamPulse API endpoint URL"
+    required: true
+    default: 'https://teampulse.dev/api/v1/prs/data'
+
+outputs:
+  http_status:
+    description: "HTTP status code returned by the final attempt to submit data."
+
+branding:
+  color: "blue"
+  icon: "git-pull-request"
