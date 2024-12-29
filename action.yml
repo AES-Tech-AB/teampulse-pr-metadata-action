@@ -4,7 +4,7 @@ description: "Posts merged PR metadata to TeamPulse API"
 author: "AES Tech AB"
 runs:
   using: "node20"
-  main: "index.js"
+  main: "dist/index.js"
 
 inputs:
   github_token:
