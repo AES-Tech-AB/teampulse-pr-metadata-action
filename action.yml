@@ -1,7 +1,7 @@
 name: "TeamPulse PR Metadata Action"
 description: "Posts merged PR metadata to TeamPulse API"
+author: "TeamPulse"
 
-author: "AES Tech AB"
 runs:
   using: "node20"
   main: "dist/index.js"

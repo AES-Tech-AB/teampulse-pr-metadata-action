@@ -23,7 +23,7 @@ A GitHub Action that collects merged PR metadata and sends it to the [TeamPulse]
 
         steps:
           - name: "Send merged PR metadata to TeamPulse"
-            uses: aes-tech-ab/teampulse-pr-metadata-action@v1.0.0
+            uses: teampulsedev/pr-metadata-action@v1.0.0
             with:
               github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub token for accessing API
               teampulse_token: ${{ secrets.TEAMPULSE_TOKEN }} # Authentication token for TeamPulse API

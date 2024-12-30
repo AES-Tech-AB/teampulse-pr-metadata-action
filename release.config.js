@@ -19,7 +19,7 @@ module.exports = {
             '@semantic-release/exec',
             {
                 // Command to update the version in README.md
-                prepareCmd: 'sed -i "s/teampulse-pr-metadata-action@v[0-9]\\+\\.[0-9]\\+\\.[0-9]\\+/teampulse-pr-metadata-action@v${nextRelease.version}/g" README.md',
+                prepareCmd: 'sed -i "s/pr-metadata-action@v[0-9]\\+\\.[0-9]\\+\\.[0-9]\\+/pr-metadata-action@v${nextRelease.version}/g" README.md',
             }
         ],
         '@semantic-release/github',
